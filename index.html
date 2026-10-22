@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <title>SAQR TEAM | Applications</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="SAQR TEAM">
+      <span class="brand-mark">S</span><span>SAQR <b>TEAM</b></span>
+    </a>
+    <a class="discord-top" id="discordTop" href="https://discord.com/" target="_blank" rel="noopener noreferrer">DISCORD <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="eyebrow"><span class="live-dot"></span> OFFICIAL RECRUITMENT</div>
+      <h1>دخول تيم صقر</h1>
+      <div class="english-title">JOIN TO <span>SAQR TEAM</span></div>
+      <p class="hero-copy">اختار القسم المناسب ليك وابدأ التقديم. جاوب بوضوح، وتأكد إن بياناتك صحيحة قبل الإرسال.</p>
+    </section>
+
+    <section class="application-grid" aria-label="اختيار نوع التقديم">
+      <button class="application-card" type="button" data-type="ADMIN">
+        <span class="card-icon">♛</span><span class="card-code">01 / MANAGEMENT</span>
+        <strong>APPY ADMIN</strong><span class="card-desc">التقديم على فريق الإدارة</span><span class="card-arrow">←</span>
+      </button>
+      <button class="application-card" type="button" data-type="MOD">
+        <span class="card-icon">⬡</span><span class="card-code">02 / MODERATION</span>
+        <strong>APPY MOD</strong><span class="card-desc">التقديم على فريق المود</span><span class="card-arrow">←</span>
+      </button>
+      <button class="application-card" type="button" data-type="EDITOR">
+        <span class="card-icon">▶</span><span class="card-code">03 / CREATIVE</span>
+        <strong>APPY EDITOR</strong><span class="card-desc">التقديم على فريق الإيديتور</span><span class="card-arrow">←</span>
+      </button>
+    </section>
+
+    <section class="discord-notice">
+      <div class="notice-symbol">!</div>
+      <div class="notice-copy">
+        <strong>ملاحظة هامة</strong>
+        <p>يجب دخول سيرفر الديسكورد الخاص بصقر حتى يتم الرد عليك بخصوص التقديم.</p>
+      </div>
+      <a class="discord-button" id="discordJoin" href="https://discord.com/" target="_blank" rel="noopener noreferrer">JOIN TO DISCORD <span>↗</span></a>
+    </section>
+
+    <section class="form-panel" id="formPanel" hidden>
+      <div class="form-heading">
+        <button class="back-button" type="button" id="backButton">→ رجوع</button>
+        <div class="form-kicker">SAQR TEAM / APPLICATION</div>
+        <h2 id="formTitle">APPY ADMIN</h2>
+        <p>املأ البيانات التالية بعناية. الحقول المعلّمة بـ * مطلوبة.</p>
+      </div>
+      <form id="applicationForm">
+        <input type="hidden" name="applicationType" id="applicationType">
+        <div class="fields-grid">
+          <label class="field"><span>اسمك كامل؟ <i>*</i></span><input name="fullName" maxlength="100" placeholder="اكتب اسمك الكامل" required></label>
+          <label class="field"><span>عمرك الحقيقي؟ <i>*</i></span><input name="age" type="number" min="13" max="99" placeholder="العمر" required></label>
+          <label class="field"><span>خبرتك قد إيه؟ <i>*</i></span><textarea name="experience" rows="3" maxlength="1200" placeholder="احكيلنا عن خبرتك" required></textarea></label>
+          <label class="field"><span>أماكن اشتغلت فيها قبل كده؟ <i>*</i></span><textarea name="previousPlaces" rows="3" maxlength="1200" placeholder="اكتب أسماء السيرفرات أو الأماكن، أو اكتب لا يوجد" required></textarea></label>
+          <div class="field full-width">
+            <span>نوع المتقدم؟ <i>*</i></span>
+            <div class="gender-options">
+              <label class="gender-option"><input type="radio" name="applicantGender" value="ولد" required><span>ولد</span></label>
+              <label class="gender-option"><input type="radio" name="applicantGender" value="بنت" required><span>بنت</span></label>
+            </div>
+            <small>اختيار النوع مطلوب لتحديد إذا كان رقم الهاتف إلزاميًا أم اختياريًا.</small>
+          </div>
+          <label class="field full-width"><span>رقم هاتفك <i id="phoneRequirement">اختياري للبنت / إلزامي للولد</i></span><input name="phone" id="phoneInput" type="tel" maxlength="30" placeholder="رقم الهاتف (حسب الشرط أعلاه)"><small>استخدم رقمًا يمكنك التواصل من خلاله. لن يظهر على الموقع.</small></label>
+          <label class="field"><span>يوزر الديسكورد الخاص بك <i>*</i></span><input name="discordUsername" maxlength="100" placeholder="username أو @username" required></label>
+          <label class="field"><span>يوزر كيك الخاص بك <i>*</i></span><input name="kickUsername" maxlength="100" placeholder="Kick username" required></label>
+          <label class="field full-width"><span>يوزر التيك توك الخاص بك <i>*</i></span><input name="tiktokUsername" maxlength="100" placeholder="@username أو رابط الحساب" required></label>
+        </div>
+        <label class="consent"><input type="checkbox" id="confirmData" required><span>أؤكد أن البيانات التي أدخلتها صحيحة.</span></label>
+        <button class="submit-button" id="submitButton" type="submit"><span>إرسال التقديم</span><span>↗</span></button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <footer><span>SAQR TEAM</span><span>BUILT FOR THE NEXT LEVEL</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

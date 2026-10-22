@@ -1,0 +1,7 @@
+{
+  "name": "saqr-team-applications",
+  "version": "1.0.0",
+  "private": true,
+  "description": "SAQR TEAM application website for Vercel",
+  "engines": { "node": ">=18" }
+}

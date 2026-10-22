@@ -10,7 +10,7 @@ const phoneRequirement = document.getElementById("phoneRequirement");
 const backButton = document.getElementById("backButton");
 
 // ضع رابط دعوة ديسكورد الحقيقي هنا، وسيتم استخدامه في الزرين أعلى الصفحة.
-const DISCORD_INVITE_URL = "https://discord.com/";
+const DISCORD_INVITE_URL = "https://discord.gg/m9Cu2WdcZ";
 
 document.getElementById("discordTop").href = DISCORD_INVITE_URL;
 document.getElementById("discordJoin").href = DISCORD_INVITE_URL;
